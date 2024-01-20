@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="fr">
+    <head>
+        <title>Snake</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+          <canvas id="game"></canvas>
+          <canvas id="wallLayer"></canvas>
+          <p id="scoreLabel">Score: 3</p>
+          
+          <div id="settings">
+            
+            <div>
+                <p>Tolerance Slider</p>
+                <input title="Tolerance Slider" type="range" min="0.4" max="0.7" value="0.5" step="0.1" id="toleranceSlider" oninput="toleranceValue.innerText = this.value">
+                <p>Value: <span id="toleranceValue">0.5</span></p>
+            </div>
+
+            <div>
+                <p>Snake Color</p>
+                <input type="color" name="snakeColor" id="snakeColorPicker" value="#ff800b">
+            </div>
+
+            <p>Apple Color</p>
+            <input type="color" name="appleColor" id="appleColorPicker" value="#D9534F">
+
+            <p>Wall Color</p>
+            <input type="color" name="wallColor" id="wallColorPicker" value="#000000">
+
+            <p>Background Color</p>
+            <input type="color" name="bgColor" id="bgColorPicker" value="#EEEEEE">
+
+            <hr>
+            <button onclick="init()">Start</button>
+          </div>
+    </body>
+</html>

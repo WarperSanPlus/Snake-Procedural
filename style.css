@@ -1,0 +1,25 @@
+#wallLayer{
+    z-index: 0;
+}
+
+#settings{
+    position: absolute;
+    right: 0%;
+    width: 20%;
+    padding: 0 0 0 1%;
+    border-left: 3px solid #000000;
+}
+
+#game{
+    z-index: 1;
+}
+
+#scoreLayer{
+    text-align: center;
+    font-size: 2em;
+}
+
+canvas{
+    background-color: transparent;
+    position: absolute;
+}
